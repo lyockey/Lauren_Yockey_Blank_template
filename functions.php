@@ -13,10 +13,10 @@ function blank_widgets_init() {
         'after_title'   =>  '</h2>'
     ));
 
-    /*--- First Footer Widget ---*/
-    register_sidebar( array (
+/*--- First Footer Widget ---*/
+    register_sidebar( array(
         'name'          =>  ('First Footer Widget'),
-        'id'            =>  'footer-one',
+        'id'            =>  'footer-widget-one',
         'description'   =>  'Left widget in the footer',
         'before_widget' =>  '<div class="widget-footer widget-left">',
         'after_widget'  =>  '</div>',
@@ -25,9 +25,9 @@ function blank_widgets_init() {
     ));
 
 /*--- Second Footer Widget ---*/
-    register_sidebar( array (
+    register_sidebar( array(
         'name'          =>  ('Second Footer Widget'),
-        'id'            =>  'footer-two',
+        'id'            =>  'footer-widget-two',
         'description'   =>  'Middle widget in the footer',
         'before_widget' =>  '<div class="widget-footer widget-middle">',
         'after_widget'  =>  '</div>',
@@ -36,9 +36,9 @@ function blank_widgets_init() {
     ));
 
 /*--- Third Footer Widget ---*/
-    register_sidebar( array (
+    register_sidebar( array(
         'name'          =>  ('Third Footer Widget'),
-        'id'            =>  'footer-three',
+        'id'            =>  'footer-widget-three',
         'description'   =>  'Right widget in the footer',
         'before_widget' =>  '<div class="widget-footer widget-right">',
         'after_widget'  =>  '</div>',
@@ -50,14 +50,3 @@ function blank_widgets_init() {
 }
 
 add_action('widgets_init', 'blank_widgets_init');
-
-
-
-
-
-
-
-
-
-
-?>
